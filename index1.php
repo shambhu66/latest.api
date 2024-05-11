@@ -32,7 +32,7 @@ error_reporting(0);
         <a href="https://www.latestforall.com/" class="btn btn-info btn-md">
           <span class="glyphicon glyphicon-home"></span> Home
         </a>
-      </li>
+         </li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Blog</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://latestforall.com/contact.php">Contact Us</a></li>
@@ -40,9 +40,9 @@ error_reporting(0);
                    <div class="mx-1">
       
       <a href="./login.php" class="btn btn-danger">Login</a>
-     <a href="./signup.php" class="btn btn-danger">SignUp</a>
+      <a href="./signup.php" class="btn btn-danger">SignUp</a>
      
-    </div>
+           </div>
                     </ul>
                 </div>
             </div>
