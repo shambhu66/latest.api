@@ -1,0 +1,274 @@
+<?php
+session_start();
+error_reporting(0);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest For All</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-warning font-weight-bold">LATEST FOR ALL</a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler"></span>
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.php">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                     
+                    <div class="mx-1">
+                       <a href="./login.php" class="btn btn-danger">Login</a>
+                        <a href="./signup.php" class="btn btn-danger">SignUp</a>
+                        <a href="./adminlogin.php" class="btn btn-danger">Admin</a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="images/science.webp">
+                    <div class="carousel-caption">
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What We Do</h2>
+                    <div class="about-content">
+                        We offer complete WordPress website design for blogs, e-commerce, shoping cart ect, data entry into google spreadsheet, excel sheet, word document, 
+                          and coversion from one format to another.
+
+                    </div>
+                    <button type="button" class="btn btn-primary">Read More >></button>
+                </div>
+            </div>
+        </div>
+        <!-- Services-->
+        <section id="services">
+            <div class="container">
+                <h1>Our Services</h1>
+                <div class="row services">
+                    <div class="col-md-4 text-center">
+                        <div class="icon">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <h3>Wordpress Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <h3>Data Entry</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon">
+                            <i class="fa fa-file-excel"></i>
+                        </div>
+                        <h3>Convertion</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promo">
+            <div class="container">
+               
+                       <h1>Let's Create Something Together</h1>
+                      <p>We'd love to help you create something amazing.
+Reach out to us and tell us about your vision</p>
+                   
+                <a href="https://latestforall.com/contact.php" class="btn btn-primary">Say Hello</a>
+            </div>
+        </section>
+        
+            <!-- Portfolio Grid-->
+            <section class="page-section bg-light" id="portfolio">
+                <div class="container">
+                    <h1>Sample Work Within Our Design Portfolio</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">Click To Visit</div>
+                                </div>
+      <a href="http://shop.latestforall.com/">
+         <img  src="images/shop1.jpg" width="400" height="350">
+      </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Woo-Commerce & Elementor</div>
+                                <div class="portfolio-caption-subheading text-muted">Ocean Wp-Theme</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">Click To Visit</div>
+                                </div>
+                               <a href="http://shop.latestforall.com/">
+         <img  src="images/shop2.jpg" width="400" height="350">
+      </a>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Wordpress Web Design</div>
+                                <div class="portfolio-caption-subheading text-muted">Product Listing</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="images/03-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Finish</div>
+                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fa fa-plus fa-5x"></i></i></div>
+                                </div>
+                                <img class="img-fluid" src="images/04-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fa fa-plus fa-5x"></i></i></div>
+                                </div>
+                                <img class="img-fluid" src="images/05-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fa fa-plus fa-5x"></i></i></div>
+                                </div>
+                                <img class="img-fluid" src="images/06-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+         
+                
+                
+                <!-- Footer-->
+                <section id="footer">
+                    <footer id="bottom" class="py-4 bg-dark">
+
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 class="font-italic text-center text-white font-weight-bold"style="font-size:26px" >Important Links</h4>
+                                <ol class="list-unstyled text-center">
+                                    <li><a class="navbar-brand text-warning" href="#">About Us</a></li>
+                                    <li><a class="navbar-brand text-warning" href="#">Contact Us</a></li>
+                                   <li><a class="navbar-brand text-warning" href="#">Privacy Policy</a></li>
+
+                                </ol>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="font-italic text-center text-white font-weight-bold"style="font-size:26px" >Services</h4>
+                                <ol class="list-unstyled text-center">
+                                    <li><a class="navbar-brand text-warning" href="#">Data Entry</a></li>
+                                   <li><a class="navbar-brand text-warning" href="#">Translation</a></li>
+                                   <li><a class="navbar-brand text-warning" href="#">Wordpress Design</a></li>
+
+                                </ol>
+                            </div>
+                            <div class="col-md-4">
+
+                                <h4 class="font-italic text-center text-white font-weight-bold"style="font-size:26px" >Follow Us</h4>
+                                    <ol class="list-unstyled text-center">
+                    <a class="btn btn-dark btn-social mx-2" style="font-size:36px;color:blue" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" style="font-size:36px;color:blue" href="#!"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" style="font-size:36px;color:blue" href="#!"><i class="fab fa-twitter"></i></a>
+                </ol>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div class="container my-4">
+                            <p class="float-right "><a href="#">Back to top</a></p>
+                            <p><a class="navbar-brand text-info text-center" href="https://www.latestforall.com">&copy;2020
+                                    LatestForAll | All Rights Reserved </p>
+                        </div>
+
+                    </footer>
+                </section>
+</body>
+
+</html>
